@@ -15,21 +15,6 @@
     ```
     However, the structure of the underlying modules and their functions is not yet stable and, for now, may change in any version increment. Such changes will be described in the release notes below.
 
-## 1.3
-
-Continues to reorganise code structure behind the scenes. Makes all functions [Autograd](https://github.com/HIPS/autograd)-able.
-
-### 1.3.0 (forthcoming)
-
-!!! example "Changes in v1.3.0"
-    * Rename module `extra` to `buffers`.
-    * All functions in `solve` updated to be [Autograd](https://github.com/HIPS/autograd)-able.
-    * Relocated `_CaSolubility` function from root into new module `solubility` and renamed as `CaCO3`.
-      * Separated out its internal calculations into a set of subfunctions also in the `solubility` module.
-    * Relocated `_RevelleFactor` function from root into module `buffers` and removed leading `_`.
-    * Added module `constants` for storing values of universal physical constants.
-    * Documentation substantially expanded and switched to using [mkdocs-material](https://squidfunk.github.io/mkdocs-material/).
-
 ## 1.2
 
 Adds additional buffer factor calculations that are not currently included in CO<sub>2</sub>SYS for MATLAB. New releases are henceforth assigned DOIs from Zenodo.
